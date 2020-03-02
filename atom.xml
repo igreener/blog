@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://github.com/igreener/igreener.github.io</id>
+    <id>https://igreener.github.io</id>
     <title>2333</title>
-    <updated>2020-03-02T02:29:43.012Z</updated>
+    <updated>2020-03-02T02:37:00.626Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://github.com/igreener/igreener.github.io"/>
-    <link rel="self" href="https://github.com/igreener/igreener.github.io/atom.xml"/>
-    <logo>https://github.com/igreener/igreener.github.io/images/avatar.png</logo>
-    <icon>https://github.com/igreener/igreener.github.io/favicon.ico</icon>
+    <link rel="alternate" href="https://igreener.github.io"/>
+    <link rel="self" href="https://igreener.github.io/atom.xml"/>
+    <logo>https://igreener.github.io/images/avatar.png</logo>
+    <icon>https://igreener.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 2333</rights>
     <entry>
         <title type="html"><![CDATA[test]]></title>
-        <id>https://github.com/igreener/igreener.github.io/post/test/</id>
-        <link href="https://github.com/igreener/igreener.github.io/post/test/">
+        <id>https://igreener.github.io/post/test/</id>
+        <link href="https://igreener.github.io/post/test/">
         </link>
         <updated>2020-03-02T02:29:17.000Z</updated>
         <content type="html"><![CDATA[<p>233</p>
@@ -20,8 +20,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://github.com/igreener/igreener.github.io/post/hello-gridea/</id>
-        <link href="https://github.com/igreener/igreener.github.io/post/hello-gridea/">
+        <id>https://igreener.github.io/post/hello-gridea/</id>
+        <link href="https://igreener.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
