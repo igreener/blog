@@ -1,21 +1,106 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://igreener.github.io</id>
-    <title>unnull &apos;s blog</title>
-    <updated>2020-03-02T08:32:54.325Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://igreener.github.io"/>
-    <link rel="self" href="https://igreener.github.io/atom.xml"/>
-    <logo>https://igreener.github.io/images/avatar.png</logo>
-    <icon>https://igreener.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, unnull &apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[快速幂1]]></title>
-        <id>https://igreener.github.io/kuai-su-mi/</id>
-        <link href="https://igreener.github.io/kuai-su-mi/">
-        </link>
-        <updated>2020-03-02T02:42:54.000Z</updated>
-        <content type="html"><![CDATA[<ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>快速幂1 | unnull &#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://igreener.github.io/favicon.ico?v=1583137972630">
+<link rel="stylesheet" href="https://igreener.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+前置知识
+一个十进制数可以转化成一个二进制数 如9 →\rightarrow→ 1001
+
+
+考虑一个问题
+xnx^nxn      其中0≤x,n&lt;2310≤x,n&lt;2^{31}0≤x,n&lt;231 答案对1e9+7取模..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://igreener.github.io">
+        <img src="https://igreener.github.io/images/avatar.png?v=1583137972630" class="site-logo">
+        <h1 class="site-title">unnull &#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://igreener.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">快速幂1</h2>
+            <div class="post-date">2020-03-02</div>
+            
+            <div class="post-content" v-pre>
+              <ul>
 <li>前置知识<br>
 一个十进制数可以转化成一个二进制数 如9 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> 1001</li>
 </ul>
@@ -79,15 +164,46 @@ ll qpow(int x,int n)
     return a[n];
 }
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test]]></title>
-        <id>https://igreener.github.io/test/</id>
-        <link href="https://igreener.github.io/test/">
-        </link>
-        <updated>2020-03-02T02:29:17.000Z</updated>
-        <content type="html"><![CDATA[<p>233</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://igreener.github.io/test/">
+                  <h3 class="post-title">
+                    test
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
