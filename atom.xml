@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://igreener.github.io</id>
     <title>unnull &apos;s blog</title>
-    <updated>2020-03-02T08:36:29.961Z</updated>
+    <updated>2020-03-02T08:38:29.193Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://igreener.github.io"/>
     <link rel="self" href="https://igreener.github.io/atom.xml"/>
@@ -20,45 +20,51 @@
 一个十进制数可以转化成一个二进制数 如9 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> 1001</li>
 </ul>
 <hr>
-<h2 id="考虑一个问题xn其中0xn231-答案对1e97取模">考虑一个问题<br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span>其中<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo separator="true">,</mo><mi>n</mi><mo>&lt;</mo><msup><mn>2</mn><mn>31</mn></msup></mrow><annotation encoding="application/x-tex">0≤x,n&lt;2^{31}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span> 答案对1e9+7取模</h2>
-<hr>
-<h2 id="显然-直接乘的复杂度为theta-n的-不够优我们把n转化成二进制如16-rightarrow-10000可以发现x16-x8-x8-x4-x4-x4-x4发现有大量的需要重复计算的地方考虑优化从末尾开始对于n的二进制下的每一个1将x2len-1乘入答案后将该位置的1变为0其中len为从右往左数第一个1的位置直到全为0为止">显然 直接乘的复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\Theta  (n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Θ</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>的 不够优<br>
-我们把n转化成二进制<br>
-如16 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> 10000<br>
-可以发现<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>16</mn></msup></mrow><annotation encoding="application/x-tex">x^{16}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span></span> = <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>8</mn></msup></mrow><annotation encoding="application/x-tex">x^8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span>* <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>8</mn></msup></mrow><annotation encoding="application/x-tex">x^8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span> = <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">x^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span> * <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">x^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span> * <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">x^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span> * <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">x^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span>=....<br>
-发现有大量的需要重复计算的地方<br>
-考虑优化<br>
-从末尾开始,对于n的二进制下的每一个1,将<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><msup><mn>2</mn><mrow><mi>l</mi><mi>e</mi><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></msup></mrow><annotation encoding="application/x-tex">x^{2^{len-1}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.01192em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.01192em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9270285714285714em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mord mathdefault mtight">e</span><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>乘入答案,后将该位置的1变为0(其中len为从右往左数第一个1的位置)<br>
-直到全为0为止</h2>
-<h2 id="当然-在实现上是有点区别的以下是代码">当然 在实现上是有点区别的<br>
-以下是代码</h2>
-<pre><code>#define ll long long
+<p>考虑一个问题</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Can&#039;t use function &#039;$&#039; in math mode at position 4: x^n$̲$其中$0≤x,n&lt;2^{31…'>x^n$$其中$0≤x,n&lt;2^{31}$ 答案对1e9+7取模
+---
+---
+显然 直接乘的复杂度为$\Theta  (n)$的 不够优
+我们把n转化成二进制
+如16 $\rightarrow$ 10000
+可以发现$x^{16}$ = $x^8$* $x^8$ = $x^4$ * $x^4$ * $x^4$ * $x^4$=....
+发现有大量的需要重复计算的地方
+考虑优化
+从末尾开始,对于n的二进制下的每一个1,将$x^{2^{len-1}}$乘入答案,后将该位置的1变为0(其中len为从右往左数第一个1的位置)
+直到全为0为止
+---
+当然 在实现上是有点区别的
+以下是代码
+---
+ ```
+#define ll long long
 const int mod =1e9+7;
 ll qpow(int x,int n)
 {
-       ll ans =1;
-       ll t =x;//累乘器
-       while(n)
-       {
-           if(n&amp;1)//该位有1
-           ans = ans * t % mod  ;
-           t =t * t % mod ;
-           n = n / 2 ;
-       }
-       return ans ;
+        ll ans =1;
+        ll t =x;//累乘器
+        while(n)
+        {
+            if(n&amp;1)//该位有1
+            ans = ans * t % mod  ;
+            t =t * t % mod ;
+            n = n / 2 ;
+        }
+        return ans ;
 }`
-</code></pre>
-<hr>
-<h2 id="实际上还有另一种做法由于题目有对答案取模我们打表发现当n足够大时尾数会呈现周期性变化将周期省略减少计算次数复杂度theta-不知道并不推荐这种写法这种写法需要一些空间">实际上，还有另一种做法:<br>
-由于题目有对答案取模<br>
-我们打表发现<br>
-当n足够大时<br>
-尾数会呈现周期性变化<br>
-将周期省略，减少计算次数,复杂度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>(</mo><mi mathvariant="normal">不</mi><mi mathvariant="normal">知</mi><mi mathvariant="normal">道</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\Theta  (不知道)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Θ</span><span class="mopen">(</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">知</span><span class="mord cjk_fallback">道</span><span class="mclose">)</span></span></span></span><br>
-并不推荐这种写法，这种写法需要一些空间</h2>
-<p>code:</p>
-<pre><code>#define ll long long 
+```
+---
+实际上，还有另一种做法:
+由于题目有对答案取模
+我们打表发现
+当n足够大时
+尾数会呈现周期性变化
+将周期省略，减少计算次数,复杂度$\Theta  (不知道)$
+并不推荐这种写法，这种写法需要一些空间
+---
+code:
+```
+#define ll long long 
 const int maxn=1e5+7;//看情况进行选择
 const int mod =1e9+7;
 int a[maxn];
@@ -78,7 +84,9 @@ ll qpow(int x,int n)
     n=n%cnt;
     return a[n];
 }
-</code></pre>
+```
+
+</p>
 ]]></content>
     </entry>
     <entry>
