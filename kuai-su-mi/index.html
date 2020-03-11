@@ -1,20 +1,13 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>快速幂1 | unnull &#39;s blog</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://igreener.github.io/favicon.ico?v=1583925226265">
+<link rel="shortcut icon" href="https://igreener.github.io/favicon.ico?v=1583925843177">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://igreener.github.io/styles/main.css">
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="alternate" type="application/atom+xml" title="快速幂1 | unnull &#39;s blog - Atom Feed" href="https://igreener.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
@@ -28,81 +21,82 @@ xnx^nxn其中   0≤x,n&lt;2310≤x,n&lt;2^{31}0≤x,n&lt;231  答案对1e9+7取
 
 ..." />
     <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://igreener.github.io">
-        <img src="https://igreener.github.io/images/avatar.png?v=1583925226265" class="site-logo">
-        <h1 class="site-title">unnull &#39;s blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://igreener.github.io">
+  <img class="avatar" src="https://igreener.github.io/images/avatar.png?v=1583925843177" alt="">
+  </a>
+  <h1 class="site-title">
+    unnull &#39;s blog
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
-      
-    </div>
-    <div class="site-description">
-      katex.render("x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}", document.getElementById("math"));
-    </div>
-    <div class="site-footer">
-       | <a class="rss" href="https://igreener.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
+    
   </div>
 </div>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">快速幂1</h2>
-            <div class="post-date">2020-03-02</div>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              快速幂1
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-03-02
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
             
-            <div class="post-content" v-pre>
-              <ul>
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <ul>
 <li>前置知识<br>
 一个十进制数可以转化成一个二进制数 如9 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> 1001</li>
 </ul>
@@ -167,50 +161,101 @@ ll qpow(int x,int n)
 }
 </code></pre>
 
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://igreener.github.io/test/">
-                  <h3 class="post-title">
-                    test
-                  </h3>
-                </a>
               </div>
-            
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E8%80%83%E8%99%91%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98xn%E5%85%B6%E4%B8%AD-0xn231-%E7%AD%94%E6%A1%88%E5%AF%B91e97%E5%8F%96%E6%A8%A1">考虑一个问题<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span>其中   <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo separator="true">,</mo><mi>n</mi><mo>&lt;</mo><msup><mn>2</mn><mn>31</mn></msup></mrow><annotation encoding="application/x-tex">0≤x,n&lt;2^{31}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>  答案对1e9+7取模</a></li>
+<li><a href="#%E6%98%BE%E7%84%B6-%E7%9B%B4%E6%8E%A5%E4%B9%98%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%BAtheta-n%E7%9A%84-%E4%B8%8D%E5%A4%9F%E4%BC%98%E6%88%91%E4%BB%AC%E6%8A%8An%E8%BD%AC%E5%8C%96%E6%88%90%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%A6%8216-rightarrow-10000%E5%8F%AF%E4%BB%A5%E5%8F%91%E7%8E%B0x16-x8-x8-x4-x4-x4-x4%E5%8F%91%E7%8E%B0%E6%9C%89%E5%A4%A7%E9%87%8F%E7%9A%84%E9%9C%80%E8%A6%81%E9%87%8D%E5%A4%8D%E8%AE%A1%E7%AE%97%E7%9A%84%E5%9C%B0%E6%96%B9%E8%80%83%E8%99%91%E4%BC%98%E5%8C%96%E4%BB%8E%E6%9C%AB%E5%B0%BE%E5%BC%80%E5%A7%8B%E5%AF%B9%E4%BA%8En%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8B%E7%9A%84%E6%AF%8F%E4%B8%80%E4%B8%AA1%E5%B0%86x2len-1%E4%B9%98%E5%85%A5%E7%AD%94%E6%A1%88%E5%90%8E%E5%B0%86%E8%AF%A5%E4%BD%8D%E7%BD%AE%E7%9A%841%E5%8F%98%E4%B8%BA0%E5%85%B6%E4%B8%ADlen%E4%B8%BA%E4%BB%8E%E5%8F%B3%E5%BE%80%E5%B7%A6%E6%95%B0%E7%AC%AC%E4%B8%80%E4%B8%AA1%E7%9A%84%E4%BD%8D%E7%BD%AE%E7%9B%B4%E5%88%B0%E5%85%A8%E4%B8%BA0%E4%B8%BA%E6%AD%A2">显然 直接乘的复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\Theta  (n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Θ</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>的 不够优<br>
+我们把n转化成二进制<br>
+如16 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> 10000<br>
+可以发现<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>16</mn></msup></mrow><annotation encoding="application/x-tex">x^{16}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span></span> = <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>8</mn></msup></mrow><annotation encoding="application/x-tex">x^8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span>* <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>8</mn></msup></mrow><annotation encoding="application/x-tex">x^8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span> = <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">x^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span> * <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">x^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span> * <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">x^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span> * <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">x^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span>=....<br>
+发现有大量的需要重复计算的地方<br>
+考虑优化<br>
+从末尾开始,对于n的二进制下的每一个1,将<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><msup><mn>2</mn><mrow><mi>l</mi><mi>e</mi><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></msup></mrow><annotation encoding="application/x-tex">x^{2^{len-1}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.01192em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.01192em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9270285714285714em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mord mathdefault mtight">e</span><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>乘入答案,后将该位置的1变为0(其中len为从右往左数第一个1的位置)<br>
+直到全为0为止</a></li>
+<li><a href="#%E5%BD%93%E7%84%B6-%E5%9C%A8%E5%AE%9E%E7%8E%B0%E4%B8%8A%E6%98%AF%E6%9C%89%E7%82%B9%E5%8C%BA%E5%88%AB%E7%9A%84%E4%BB%A5%E4%B8%8B%E6%98%AF%E4%BB%A3%E7%A0%81">当然 在实现上是有点区别的<br>
+以下是代码</a></li>
+<li><a href="#%E5%AE%9E%E9%99%85%E4%B8%8A%E8%BF%98%E6%9C%89%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%81%9A%E6%B3%95%E7%94%B1%E4%BA%8E%E9%A2%98%E7%9B%AE%E6%9C%89%E5%AF%B9%E7%AD%94%E6%A1%88%E5%8F%96%E6%A8%A1%E6%88%91%E4%BB%AC%E6%89%93%E8%A1%A8%E5%8F%91%E7%8E%B0%E5%BD%93n%E8%B6%B3%E5%A4%9F%E5%A4%A7%E6%97%B6%E5%B0%BE%E6%95%B0%E4%BC%9A%E5%91%88%E7%8E%B0%E5%91%A8%E6%9C%9F%E6%80%A7%E5%8F%98%E5%8C%96%E5%B0%86%E5%91%A8%E6%9C%9F%E7%9C%81%E7%95%A5%E5%87%8F%E5%B0%91%E8%AE%A1%E7%AE%97%E6%AC%A1%E6%95%B0%E5%A4%8D%E6%9D%82%E5%BA%A6theta-%E4%B8%8D%E7%9F%A5%E9%81%93%E5%B9%B6%E4%B8%8D%E6%8E%A8%E8%8D%90%E8%BF%99%E7%A7%8D%E5%86%99%E6%B3%95%E8%BF%99%E7%A7%8D%E5%86%99%E6%B3%95%E9%9C%80%E8%A6%81%E4%B8%80%E4%BA%9B%E7%A9%BA%E9%97%B4">实际上，还有另一种做法:<br>
+由于题目有对答案取模<br>
+我们打表发现<br>
+当n足够大时<br>
+尾数会呈现周期性变化<br>
+将周期省略，减少计算次数,复杂度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>(</mo><mi mathvariant="normal">不</mi><mi mathvariant="normal">知</mi><mi mathvariant="normal">道</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\Theta  (不知道)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Θ</span><span class="mopen">(</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">知</span><span class="mord cjk_fallback">道</span><span class="mclose">)</span></span></span></span><br>
+并不推荐这种写法，这种写法需要一些空间</a></li>
+</ul>
+</li>
+</ul>
 
-            
-
-          </div>
-
+              </div>
+            </div>
+          </article>
         </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://igreener.github.io/test/">
+              <h3 class="post-title">
+                test
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  
+  <a class="rss" href="https://igreener.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
       </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+    <script>
+      hljs.initHighlightingOnLoad()
 
-AOS.init();
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
 
-</script>
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
 
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
 
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
-
-
-
-
-
+    </script>
   </body>
 </html>
