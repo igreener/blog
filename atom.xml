@@ -2,10 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://igreener.github.io</id>
     <title>unnull &apos;s blog</title>
-    <updated>2020-03-11T10:49:30.705Z</updated>
+    <updated>2020-03-11T10:50:34.411Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://igreener.github.io"/>
     <link rel="self" href="https://igreener.github.io/atom.xml"/>
+    <subtitle>&lt;head&gt;
+    &lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: [&apos;script&apos;, &apos;noscript&apos;, &apos;style&apos;, &apos;textarea&apos;, &apos;pre&apos;],
+            inlineMath: [[&apos;$&apos;,&apos;$&apos;]]
+            }
+        });
+    &lt;/script&gt;
+&lt;/head&gt;</subtitle>
     <logo>https://igreener.github.io/images/avatar.png</logo>
     <icon>https://igreener.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, unnull &apos;s blog</rights>
