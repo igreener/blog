@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://igreener.github.io/favicon.ico?v=1583925130452">
+<link rel="shortcut icon" href="https://igreener.github.io/favicon.ico?v=1583925226265">
 <link rel="stylesheet" href="https://igreener.github.io/styles/main.css">
 
 
@@ -20,6 +20,8 @@
 
     <meta name="description" content="katex.render(&#34;x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}&#34;, document.getElementById(&#34;math&#34;));">
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    
   </head>
   <body>
     <div id="app" class="main">
@@ -28,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://igreener.github.io">
-        <img src="https://igreener.github.io/images/avatar.png?v=1583925130452" class="site-logo">
+        <img src="https://igreener.github.io/images/avatar.png?v=1583925226265" class="site-logo">
         <h1 class="site-title">unnull &#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -144,6 +146,11 @@ var app = new Vue({
 
 </script>
 
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
 
 
 

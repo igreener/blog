@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://igreener.github.io</id>
     <title>unnull &apos;s blog</title>
-    <updated>2020-03-11T11:12:13.986Z</updated>
+    <updated>2020-03-11T11:13:47.568Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://igreener.github.io"/>
     <link rel="self" href="https://igreener.github.io/atom.xml"/>
@@ -88,7 +88,10 @@ ll qpow(int x,int n)
         <link href="https://igreener.github.io/test/">
         </link>
         <updated>2020-03-02T02:29:17.000Z</updated>
-        <content type="html"><![CDATA[<p>233</p>
+        <content type="html"><![CDATA[<p>\begin{vmatrix}<br>
+a &amp; b \<br>
+c &amp; d<br>
+\end{vmatrix}</p>
 ]]></content>
     </entry>
 </feed>
