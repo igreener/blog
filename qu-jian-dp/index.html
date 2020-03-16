@@ -7,7 +7,7 @@
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://igreener.github.io/favicon.ico?v=1584332287670">
+<link rel="shortcut icon" href="https://igreener.github.io/favicon.ico?v=1584349386111">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -88,10 +88,10 @@
             </p>
             
             <div class="post-content">
-              <p>首先可以明确的一点是:对于一段区间,<strong>开始位置</strong>,<strong>最后位置</strong>.<strong>区间长度</strong>,这三个元素知二得一<br>
-我们来看一道例题;<br>
-[USACO16OPEN]248 G<br>
-题意<br>
+              <h2 id="首先可以明确的一点是对于一段区间开始位置最后位置区间长度这三个元素知二得一">首先可以明确的一点是:对于一段区间,<strong>开始位置</strong>,<strong>最后位置</strong>.<strong>区间长度</strong>,这三个元素知二得一</h2>
+<p>我们来看一道例题;</p>
+<h2 id="usaco16open248-g"><a href="https://www.luogu.com.cn/problem/P3146">[USACO16OPEN]248 G</a></h2>
+<p>题意<br>
 给定一个1*n的地图，在里面玩2048，每次可以合并相邻两个（数值范围1-40），问最大能合出多少。注意合并后的数值并非加倍而是+1，例如2与2合并后的数值为3。<br>
 输入<br>
 共n+1行<br>
@@ -110,7 +110,7 @@
 <p>输出</p>
 <pre><code>3
 </code></pre>
-<p>区间dp，实际上是将一种合区间的操作(自动联想并查集)<br>
+<p>区间dp，实际上是将一种合区间的操作(自动联想并查集，并查集是合并集合)<br>
 对于初始状态 每一个元素都是一个区间<br>
 在特定条件下(数字相同时)合并来求得答案<br>
 考虑如何表征一个区间<br>
@@ -159,7 +159,7 @@ f[i][j]=max(f[i][j],f[i][k]+1)
 是将小区间合并成大区间<br>
 描绘区间的大小是用&quot;长度&quot;来刻画的<br>
 不妨从长度开始枚举</p>
-<pre><code>for(int i=1;i&lt;=n;++i)
+<pre><code>for(int i=1;i&lt;=n;++i)//初始化
 f[i][i]=a[i];
 for(int len=2;len&lt;=n;++i)//长度
 {
@@ -205,7 +205,7 @@ for(int len=2;len&lt;=n;++i)//长度
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://igreener.github.io/images/avatar.png?v=1584332287670" class="no-responsive avatar">
+    <img src="https://igreener.github.io/images/avatar.png?v=1584349386111" class="no-responsive avatar">
     <div class="text-muted"></div>
     <div class="social-container">
       
