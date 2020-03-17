@@ -2,13 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://igreener.github.io</id>
     <title>unnull &apos;s blog</title>
-    <updated>2020-03-16T09:04:25.416Z</updated>
+    <updated>2020-03-17T03:38:43.668Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://igreener.github.io"/>
     <link rel="self" href="https://igreener.github.io/atom.xml"/>
     <logo>https://igreener.github.io/images/avatar.png</logo>
     <icon>https://igreener.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, unnull &apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[口讲=-=]]></title>
+        <id>https://igreener.github.io/6G72BLri0/</id>
+        <link href="https://igreener.github.io/6G72BLri0/">
+        </link>
+        <updated>2020-03-17T02:59:58.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="2020316日可以算的上是写入教科书的一天美国熔断历史上只发生过4次上一次熔断还要追溯到2020年3月16日那天我记忆很深刻那感觉仿佛就在几天之前-某网友">2020.3.16日<br>
+可以算的上是写入教科书的一天<br>
+<strong>美国熔断历史上只发生过4次，上一次熔断，还要追溯到2020年3月16日，那天我记忆很深刻，那感觉仿佛就在几天之前。--某网友</strong></h2>
+<p>先普及一下基础知识:</p>
+<ol>
+<li>熔断机制（Circuit Breaker），也叫自动停盘机制，是指当股指波幅达到规定的熔断点时，交易所为控制风险采取的暂停交易措施。</li>
+<li>美国联邦储备系统（The Federal Reserve System），简称为美联储（The Fed），负责履行美国的中央银行的职责。(感觉上像是中国人民银行)</li>
+</ol>
+<hr>
+<p>3月9日 美国历史第二次熔断 第一次被称为&quot;黑色星期五&quot;<br>
+3月12日 美国历史第三次熔断<br>
+3月16日 美联储打算将利息下降至0% 美国历史第三次熔断<br>
+利息下降至0%这是个什么操作?<br>
+借用一句b站网友的话:<br>
+<strong>阑尾手术住院，妈突然跟你说，孩子你想要啥妈给你买啥，然后把家里储蓄全倒你床上，还说不够我去借（负利率）这TM第一反应就是自己得绝症了吧。</strong><br>
+美国人一听到这消息 心想:美国经济是要崩盘了吗  在加上前面两次熔断事件 急匆匆地把手里的股票卖了引发了第三次熔断==<br>
+回头看看这几次熔断的原因(瞎掰的):</p>
+<ol>
+<li>首先美股股价过高 股价远大于市场价值</li>
+<li>沙特阿拉伯一手骚操作 石油价格暴跌</li>
+<li>疫情的冲击<br>
+这一波动荡 让美元的霸主地位岌岌可危<br>
+<img src="https://igreener.github.io/post-images/1584416316055.png" alt="" loading="lazy"></li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[区间dp]]></title>
         <id>https://igreener.github.io/qu-jian-dp/</id>
@@ -177,18 +209,6 @@ ll qpow(int x,int n)
     return a[n];
 }
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test]]></title>
-        <id>https://igreener.github.io/test/</id>
-        <link href="https://igreener.github.io/test/">
-        </link>
-        <updated>2020-03-02T02:29:17.000Z</updated>
-        <content type="html"><![CDATA[<p>\begin{vmatrix}<br>
-a &amp; b \<br>
-c &amp; d<br>
-\end{vmatrix}</p>
 ]]></content>
     </entry>
 </feed>
