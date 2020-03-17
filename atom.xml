@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://igreener.github.io</id>
     <title>unnull &apos;s blog</title>
-    <updated>2020-03-17T03:39:49.784Z</updated>
+    <updated>2020-03-17T03:49:22.551Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://igreener.github.io"/>
     <link rel="self" href="https://igreener.github.io/atom.xml"/>
@@ -17,7 +17,7 @@
         <updated>2020-03-17T02:59:58.000Z</updated>
         <content type="html"><![CDATA[<h2 id="2020316日可以算的上是写入教科书的一天">2020.3.16日<br>
 可以算的上是写入教科书的一天</h2>
-<h2 id="美国熔断历史上只发生过4次上一次熔断还要追溯到2020年3月16日那天我记忆很深刻那感觉仿佛就在几天之前-某网友"><strong>美国熔断历史上只发生过4次，上一次熔断，还要追溯到2020年3月16日，那天我记忆很深刻，那感觉仿佛就在几天之前。--某网友</strong></h2>
+<h2 id="美国熔断历史上只发生过4次最后一次熔断还要追溯到2020年3月16日那天我记忆很深刻那感觉仿佛就在几天之前-某网友"><strong>美国熔断历史上只发生过4次，最后一次熔断，还要追溯到2020年3月16日，那天我记忆很深刻，那感觉仿佛就在几天之前。--某网友</strong></h2>
 <p>先普及一下基础知识:</p>
 <ol>
 <li>熔断机制（Circuit Breaker），也叫自动停盘机制，是指当股指波幅达到规定的熔断点时，交易所为控制风险采取的暂停交易措施。</li>
@@ -33,7 +33,7 @@
 美国人一听到这消息 心想:美国经济是要崩盘了吗  在加上前面两次熔断事件 急匆匆地把手里的股票卖了引发了第三次熔断==<br>
 回头看看这几次熔断的原因(瞎掰的):</p>
 <ol>
-<li>首先美股股价过高 股价远大于市场价值</li>
+<li>首先美股股价过高 股价远大于市场价值 经济泡沫破裂</li>
 <li>沙特阿拉伯一手骚操作 石油价格暴跌</li>
 <li>疫情的冲击</li>
 </ol>
