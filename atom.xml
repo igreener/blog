@@ -2,82 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://igreener.github.io</id>
     <title>hello!</title>
-    <updated>2020-03-19T00:50:28.867Z</updated>
+    <updated>2020-04-22T16:00:01.306Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://igreener.github.io"/>
     <link rel="self" href="https://igreener.github.io/atom.xml"/>
     <logo>https://igreener.github.io/images/avatar.png</logo>
     <icon>https://igreener.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, hello!</rights>
-    <entry>
-        <title type="html"><![CDATA[口讲=-=]]></title>
-        <id>https://igreener.github.io/6G72BLri0/</id>
-        <link href="https://igreener.github.io/6G72BLri0/">
-        </link>
-        <updated>2020-03-17T02:59:58.000Z</updated>
-        <content type="html"><![CDATA[<p>写的拉跨 见谅（手动狗头</p>
-<hr>
-<p>2020.3.16日<br>
-可以算的上是写入教科书的一天</p>
-<hr>
-<p><strong>美国熔断历史上只发生过4次，最后一次熔断，还要追溯到2020年3月16日，那天我记忆很深刻，那感觉仿佛就在几天之前。--某网友</strong></p>
-<hr>
-<p>先普及一下基础知识:</p>
-<ol>
-<li>熔断机制（Circuit Breaker），也叫自动停盘机制，是指当股指波幅达到规定的熔断点时，交易所为控制风险采取的暂停交易措施。(指经济崩盘采取的应急措施，禁止股票交易，目的是抑制恐慌情绪的进一步扩大)</li>
-<li>美国联邦储备系统（The Federal Reserve System），简称为美联储（The Fed），负责履行美国的中央银行的职责。(感觉上像是中国人民银行)</li>
-</ol>
-<hr>
-<p>3月9日 美国历史第二次熔断 第一次被称为&quot;黑色星期一&quot;(3月16日也是星期一哎)<br>
-3月12日 美国历史第三次熔断<br>
-3月16日 美联储打算将利息下降至0% 美国历史第三次熔断<br>
-<img src="https://igreener.github.io/post-images/1584546798700.webp" alt="" loading="lazy"><br>
-利息下降至0%这是个什么操作?<br>
-借用一句b站网友的话:<br>
-<strong>阑尾手术住院，妈突然跟你说，孩子你想要啥妈给你买啥，然后把家里储蓄全倒你床上，还说不够我去借（负利率）这TM第一反应就是自己得绝症了吧。</strong><br>
-美国人一听到这消息 心想:美国经济是要崩盘了吗  在加上前面两次熔断事件 急匆匆地把手里的股票卖了引发了第三次熔断==<br>
-1987年美联储将利息下调了多次<br>
-这次美联储将利息下调了两次就到0%了<br>
-经济危机还没开始<br>
-可美国已经将弹药打光了<br>
-<s>(不愧是建国同志)</s></p>
-<hr>
-<p>回头看看这几次熔断的<strong>主要原因</strong>(瞎掰的):<br>
-1. 美股股价过高 股价远大于市场价值 经济泡沫破裂(内在原因)<br>
-2. 沙特阿拉伯一手骚操作 石油价格暴跌(导火线)<br>
-3. 疫情的冲击<br>
-<s>4. 川建国同志的推波助澜</s></p>
-<hr>
-<p>3月6日 沙特阿拉伯与俄罗斯谈判 要求限制石油产量来稳定石油价格<br>
-俄罗斯因需要发展经济对抗疫情拒绝<br>
-谈判破裂 价格战打响<br>
-沙特一手降价<br>
-可苦了世界上最大的页岩油出口国:美国<br>
-美国经济直接拉跨<br>
-这一波动荡 让美元的霸主地位岌岌可危<br>
-<strong>我们是历史的见证者</strong><br>
-<img src="https://igreener.github.io/post-images/1584416316055.png" alt="" loading="lazy"><br>
-<s>瑞幸又可以讲新故事了</s></p>
-<hr>
-<p>update:<br>
-3.18 美国第五次熔断(川建国同志真的会玩)<br>
-不得不说 川大师整活的能力也是一等一的<br>
-发几张截图乐呵乐呵<br>
-<img src="https://igreener.github.io/post-images/1584542708136.jpg" alt="" loading="lazy"><br>
-<img src="https://igreener.github.io/post-images/1584542423844.jpg" alt="" loading="lazy"><br>
-<img src="https://igreener.github.io/post-images/1584546879849.webp" alt="" loading="lazy"><br>
-<img src="https://igreener.github.io/post-images/1584546815582.webp" alt="" loading="lazy"><br>
-<strong>这一手操作，让trump成可以往返太阳两次(雾</strong></p>
-<pre><code>2077年，随着生物技术的发展，很多名人的脑细胞都被拿出来拍卖。
-
-一名美国人在标价区看到霍金的脑细胞标价是10万美元，爱因斯坦的是20万美元，而特朗普的是100万美元。
-
-“为什么特朗普的脑细胞价格这么贵？”
-
-“因为它们都是没用过的，先生，是全新的！”
-</code></pre>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[区间dp]]></title>
         <id>https://igreener.github.io/qu-jian-dp/</id>
